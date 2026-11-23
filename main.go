@@ -1,8 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"os"
+)
 
 func main() {
-	fmt.Println("hello rajendra")
-	fmt.Println("welcome to sathvik softech")
+	name := "Anonymous"
+	if len(os.Args) < 2 {
+		log.Printf("Name missing, assuming anonymous")
+	} else {
+		name = os.Args[1]
+	}
+	fmt.Println("Hello ", name)
 }
