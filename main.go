@@ -14,4 +14,5 @@ func main() {
 		name = os.Args[1]
 	}
 	fmt.Println("Hello ", name)
+	fmt.Println("hi")
 }
